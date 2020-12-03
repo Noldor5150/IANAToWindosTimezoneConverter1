@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IANAToWindosTimezoneConverter1", "IANAToWindosTimezoneConverter1\IANAToWindosTimezoneConverter1.csproj", "{237D2C8B-A179-4D4B-8357-73C8CA1BB7E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZoneConverterTestProject1", "TimeZoneConverterTestProject1\TimeZoneConverterTestProject1.csproj", "{58110E27-FEB0-4FC6-A58B-57AAD97319E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeZoneConverterTestProject1", "TimeZoneConverterTestProject1\TimeZoneConverterTestProject1.csproj", "{58110E27-FEB0-4FC6-A58B-57AAD97319E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeZoneConverter1", "TimeZoneConverter1", "{233982FD-E5F2-4BBD-9DDF-2246E9EB0765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{237D2C8B-A179-4D4B-8357-73C8CA1BB7E9} = {233982FD-E5F2-4BBD-9DDF-2246E9EB0765}
+		{58110E27-FEB0-4FC6-A58B-57AAD97319E1} = {233982FD-E5F2-4BBD-9DDF-2246E9EB0765}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC04C2F8-A13D-443A-AF42-CDBA14FB68EC}

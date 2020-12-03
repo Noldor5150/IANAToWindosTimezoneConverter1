@@ -1,6 +1,7 @@
 ﻿using IANAToWindosTimezoneConverter1.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using TimeZoneConverter;
@@ -54,7 +55,8 @@ namespace IANAToWindosTimezoneConverter1.Services
                 TimeZoneInfo timeZoneFrom = TZConvert.GetTimeZoneInfo(data.TimeZoneNameFrom);
                 TimeZoneInfo timeZoneTo = TZConvert.GetTimeZoneInfo(data.TimeZoneNameTo);
                 var newTime = TimeZoneInfo.ConvertTime(data.Date, timeZoneFrom, timeZoneTo);
-                result = newTime.ToString();
+                string dateFormat = "M/d/yyyy h:mm:ss tt";
+                result = DateTime.ParseExact(newTime.ToString(), dateFormat, new CultureInfo("en-US"), DateTimeStyles.None).ToString(); 
             }
             catch (TimeZoneNotFoundException)
             {
