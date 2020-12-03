@@ -6,7 +6,7 @@
 
 ### How to use (test) it
 
-###### It works via JSON requests/response, different endpoints via POST method (you can use e.g. POSTMAN).
+###### It works via JSON requests/response, different endpoints via GET method (you can use e.g. POSTMAN).
 ####   endpoint  : "/iana"
 ###### Converts an IANA time zone name to the best fitting Windows time zone ID. 
 ###### JSON request example : {"name":"America/New_York"}
