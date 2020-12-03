@@ -22,21 +22,21 @@ namespace IANAToWindosTimezoneConverter1.Controllers
         }
 
         [Route("/iana")]
-        [HttpGet]
+        [HttpPost]
         public Response Post1([FromBody] Request data)
         {
             return converter.ConvertFromIanaTz(data);
         }
 
         [Route("/windows")]
-        [HttpGet]
+        [HttpPost]
         public Response Post([FromBody] Request data)
         {
             return converter.ConvertFromWindosTz(data);
         }
 
         [Route("/dateTime")]
-        [HttpGet]
+        [HttpPost]
         public Response Post([FromBody] DateTimeRequest data)
         {
             return converter.ConvertDateTime(data);
